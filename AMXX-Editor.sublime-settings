@@ -1,0 +1,72 @@
+{
+	// Example: AMXX-Editor v4.4 by Destro
+
+	"active_profile": "default (AMXX 1.9)",
+	"build_profiles":
+	{
+		/* Example:
+		"AMXX-1.8.2":
+		{
+			"amxxpc_debug": 2,
+			"amxxpc_path": "D:\\amxmodx\\compiler\\1.8.2\\amxxpc.exe",
+			"include_dir": "D:\\amxmodx\\compiler\\1.8.2\\include",
+			"output_dir": "D:\\amxmodx\\plugins"
+		},
+		"like the default value:
+		{
+			"amxxpc_debug": 2,
+			"amxxpc_path": "${default}\\amxxpc.exe",
+			"include_dir": "${default}\\include",
+			"output_dir": "${file_path}"
+		}
+
+		Valid variables in path:
+		- ${default}			Default compiler path
+		- ${packages}			Packages path
+		- ${file_path}			Current view base path
+
+		*/
+	},
+	
+	/* Editor features */
+	"enable_tooltip": 				true,	// ( true / false )
+	"enable_buildversion": 			true,	// ( true / false )
+	"enable_check_invalid": 		true,	// ( true / false )
+	"enable_dynamic_highlight": 	true,	// ( true / false )
+	
+	/* Autocomplete */
+	"ac_enable": 			true,		// ( true / false )
+	"ac_keywords": 			2,			// ( 0: Disable, 1: Normal, 2: Insert parents )
+	"ac_snippets": 			true,		// ( true / false )
+	"ac_preprocessor": 		true,		// ( true / false )
+	"ac_emit_info": 		true,		// ( true / false )
+	"ac_local_var": 		true,		// ( true / false )
+	"ac_extra_sorted":		true,		// ( true / false )
+	
+	"live_refresh_delay": 	1.5, 		// ( 0.5 ~ 5.0 ) Delay before reparsing code.
+
+	"tooltip_style_mode":	1,			// 0: Using CSS style file, 1: Generate from color-scheme.
+	"tooltip_font_size":	1,			// Tooltip font size offset (font_size + tooltip_font_size)
+
+	"style_editor": 		"default", 	// ( stylename )
+	"style_console": 		"default",	// ( stylename )
+	"style_popup": 			"default", 	// ( stylename )
+	
+		
+
+	/***********************************************
+	* Debug flags:
+	* ""   - Set default: "a".
+	* "a"  - Errors messages.
+	* "b"  - Warnings messages.
+	* "c"  - Info messages (e.g., timings, start & end analysis).
+	* "d"  - Dev messages (verbose info).
+	* "e"  - Error Analyzer parser.
+	* "f"  - Info Analyzer.
+	* "s"  - Sublime EventListener (dev).
+	* "z"  - Enable ViewDebugMode (colorize code sections).
+	* "*"  - All debugging flags.
+	***********************************************/
+	"debug_flags": "abe",				// Console message
+	"debug_flags_log": "abcde",			// Log file
+}

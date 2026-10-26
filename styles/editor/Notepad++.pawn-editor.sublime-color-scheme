@@ -1,0 +1,200 @@
+/************************************************************
+*  Color scheme based on Notepad++ - by Destro
+*
+*  Guide:
+*    https://www.sublimetext.com/docs/3/color_schemes.html
+*************************************************************/
+{
+	"name": "AMXXEditor: Nodepad++",
+	"author": "Destro",
+	"amxxeditor":
+	{
+		"default_popup": "Notepad++",
+		"default_console": "MS-DOS"
+	},
+	"variables":
+    {
+        "main-foreground": 		"#111",
+        "main-background": 		"#f0f0f0",
+    },
+	"globals":
+	{
+		"foreground": "var(main-foreground)",
+		"background": "var(main-background)",
+		"caret": "#111",
+		
+		/* Text Selection */
+		"selection": "#60606055",
+		"selection_border": "#60606055",
+		"invisibles": "#aaa", // TAB / SPACE
+		
+
+		/* Find Highlight */
+		"highlight": "#f00",
+		"highlight_foreground": "#f00",
+		"find_highlight": "#BCE617",
+		"find_highlight_foreground": "#000",
+		
+		/* Highlight active brackets */
+		"brackets_foreground": "#f00",
+		"brackets_options": "foreground",
+		"bracket_contents_foreground": "#000",
+		"bracket_contents_options": "underline",
+		
+		/* Indentation guides */
+		"guide": "#bbb",
+		"stack_guide": "#ddd",
+		"active_guide": "#444",
+		
+		/* Line numbers */
+		"gutter": "#eee", 
+		"gutter_foreground": "#888", 
+		"line_highlight": "#D6D6EF",
+	},
+	
+	"rules":
+	[
+		{
+			"name": "Comment",
+			"scope": "comment",
+			"foreground": "#109464"
+		},
+		{
+			"name": "Number",
+			"scope": "constant.numeric",
+			"foreground": "#FF8000"
+		},
+		{
+			"name": "Number Float",
+			"scope": "constant.numeric.float",
+			"font_style": "italic"
+		},
+		{
+			"name": "Built-in constant / Bool",
+			"scope": "constant.language",
+			"foreground": "#0000FF",
+			"font_style": "bold"
+		},
+		{
+			"name": "Function Definition",
+			"scope": "support.function",
+			"foreground": "#000090"
+		},
+		{
+			"name": "Function Call",
+			"scope": "variable.function",
+			"foreground": "#600000"
+		},
+		{
+			"name": "Pawn Define Constant",
+			"scope": "entity.name.constant.preprocessor",
+			"foreground": "#804000"
+		},
+		{
+			"name": "Pawn Include path",
+			"scope": "meta.preprocessor.include.path",
+			"foreground": "#ff0000"
+		},
+		{
+			"name": "Pawn Preprocessor",
+			"scope": "meta.preprocessor",
+			"foreground": "#804000"
+		},
+		{
+			"name": "Pawn Define Multiline Block",
+			"scope": "meta.preprocessor.define.multiline",
+			"foreground": "var(main-foreground)",
+			"background": "color(var(main-background) blend(var(main-foreground) 97%))"
+		},
+		{
+			"name": "Pawn Define Group",
+			"scope": "meta.preprocessor.group",
+			"foreground": "#ff4000"
+		},
+		
+		
+		{
+			"name": "Pawn Control",
+			"scope": "keyword.control",
+			"foreground": "#0000FF"
+		},
+		{
+			"name": "Pawn Operator",
+			"scope": "keyword.operator",
+			"foreground": "#111"
+		},
+
+		{
+			"name": "Pawn Brackets",
+			"scope": "meta.brackets",
+			"foreground": "#111",
+			"font_style": "bold"
+		},
+		{
+			"name": "Pawn Parens",
+			"scope": "punctuation.section.group",
+			"foreground": "#111",
+			"font_style": "bold"
+		},
+		{
+			"name": "Pawn Braces",
+			"scope": "punctuation.section.block",
+			"foreground": "#111"
+		},
+		{
+			"name": "Pawn Comma",
+			"scope": "punctuation.separator",
+			"foreground": "#111"
+		},
+		{
+			"name": "Pawn Function Types",
+			"scope": "storage.modifier.function",
+			"foreground": "#9700CC"
+		},
+		{
+			"name": "Pawn Vars Types",
+			"scope": "storage.type.vars",
+			"foreground": "#0000FF"
+		},
+		{
+			"name": "Pawn Tag",
+			"scope": "storage.modifier.tag",
+			"foreground": "#3366CC",
+			"font_style": "italic"
+		},
+		{
+			"name": "Pawn String",
+			"scope": "string",
+			"foreground": "#808080",
+			"font_style": ""
+		},
+		{
+			"name": "Pawn String Escape",
+			"scope": "string constant",
+			"foreground": "#333"
+		},
+
+		{
+			"name": "Pawn Constant Vars",
+			"scope": "constant.vars",
+			"foreground": "#0000A0",
+			"font_style": "italic",
+			
+			// Fix bug, reverse foreground/background
+			"background": "#00000001"
+		},
+		{
+			/* Fix selection highlight */
+			"name": "Fix Constant on selection",
+			"scope": "fixselection",
+			"background": "#00000001",
+		},
+		
+		{
+			"name": "Invalid – Illegal",
+			"scope": "invalid.illegal",
+			"foreground": "#000000",
+			"background": "#ff000099"
+		}	
+	]
+}

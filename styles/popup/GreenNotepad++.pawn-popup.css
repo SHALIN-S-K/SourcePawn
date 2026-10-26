@@ -1,0 +1,139 @@
+/* Sublime Text MiniHTML docs -> http://www.sublimetext.com/docs/minihtml.html */
+
+/*
+	Sublime Text Vars:
+    var(--background)
+    var(--foreground)
+    var(--accent)
+    var(--redish)
+    var(--orangish)
+    var(--yellowish)
+    var(--greenish)
+    var(--cyanish)
+    var(--bluish)
+    var(--purplish)
+    var(--pinkish)
+	
+	AMXX-Editor:
+	var(--micro-size)
+	var(--small-size)
+	var(--normal-size)
+	var(--large-size)
+*/
+
+html {
+	font-family: Tahoma;
+	font-size: var(--normal-size);
+	color: #111;
+}
+
+body {
+	margin: 0px;
+}
+
+.top {
+	background-color: #a5cd60;
+	padding: 4px 10px 7px 10px;
+	font-family: Verdana;
+	color: #a5cd60;
+}
+
+.content {
+	background-color: #fff;
+	padding: 5px 10px 5px 10px;
+}
+
+.bottom {
+	background-color: #a5cd60;
+	padding: 2px;
+}
+
+/********************************/
+
+
+/* Popup top */
+.top a {
+	color: #fff;
+	font-weight: bold;
+}
+.top .separator { 
+	padding: 0px 5px 0px 5px;
+}
+
+/* Tooltip function */
+.tooltip-function .inspectorTitle { color: #000; font-weight: bold; margin-top: 5px; }
+.tooltip-function .inspectorBlock { color: #555; }
+
+
+/* Tooltip include */
+.tooltip-include .info {
+	margin: 0px;
+	font-weight: bold;
+}
+.tooltip-include .path {
+	color: #c84f52;
+}
+
+
+
+/* Tooltip tags */
+.tooltip-tag div.itemrow {
+	margin: 2px;
+}
+
+.tooltip-tag a.funcname {
+	padding-left: 4px;
+}
+
+
+/* Document comments Block */
+.code {
+	font-family: monospace;
+	background-color: #f5f5f5;
+	padding: 4px;
+	border-radius: 2px;
+	margin: 5px;
+}
+
+.code b {
+	color: #666;
+}
+
+.doc2 { 
+	color: #111;
+}
+
+.doc1 { 
+	color: #444;
+	font-style: italic;
+}
+
+
+/* Buttons */
+.btn {
+	font-size: var(--small-size);
+	text-decoration: none;
+	border-radius: 4px;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+.btn.go {
+	background-color: #4fd154;
+	color: #fff;
+}
+
+.btn.copy {
+	background-color: #4fd154;
+	color: #fff;
+}
+
+
+/* Syntax style ( setting 'tooltip_style_mode' = 0  */
+.pawnDefaultColor { color: #111; font-family: Verdana; }
+.pawnFunction { color: #875A8F; font-weight: bold; }
+.pawnString { color: #808080; }
+.pawnOperator { color: #111; }
+.pawnType { color: #0000ff; font-weight: normal; }
+.pawnNumber { color: #ff8000; font-style: italic; }
+.pawnTag { color: #3366CC; font-style: italic; text-decoration: none; font-family: Verdana; }

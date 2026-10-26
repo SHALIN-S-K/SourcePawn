@@ -1,0 +1,5 @@
+4.4-4421
+
+News:
+- New: Added Lysis Decompiler (https://headlinedev.xyz/lysis/).
+- Fix: Fixed multiple issues reported through Rollbar.

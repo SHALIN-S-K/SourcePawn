@@ -1,0 +1,185 @@
+{
+	"name": "AMXXEditor: Twilight",
+	"author": "Destro",
+	"amxxeditor": {
+		"default_popup": "BasicBlack",
+		"default_console": "SmallFonts-Terminal"
+	},
+	"variables": {
+		"main-foreground": "#8797B0",
+		"main-background": "#151515",
+		"selection-color": "#DDF0FF",
+		"highlight-color": "#BCE617",
+		"comment-color": "#555",
+	},
+	"globals": {
+		"foreground": "var(main-foreground)",
+		"background": "var(main-background)",
+		"caret": "#b5af0b",
+
+		/* Text Selection */
+		"selection": "color(var(selection-color) a(20%))",
+		"selection_border": "color(var(selection-color) a(20%))",
+		"invisibles": "color(var(main-foreground) a(25%))", // TAB / SPACE
+		
+		/* Find Highlight */
+		"highlight": "#000",
+		"find_highlight": "var(highlight-color)",
+		"find_highlight_foreground": "#000",
+		
+		/* Highlight active brackets */
+		"brackets_foreground": "#a00",
+		"brackets_options": "foreground",
+		"bracket_contents_foreground": "#FFF",
+		"bracket_contents_options": "underline",
+		
+		/* Indentation guides */
+		"guide": "color(var(comment-color) a(35%))",
+		"stack_guide": "color(var(comment-color) a(70%))",
+		"active_guide": "var(comment-color)",
+		
+		/* Line numbers */
+		"gutter": "var(main-background)", 
+		"gutter_foreground": "color(var(main-foreground) a(50%))", 
+		"line_highlight": "color(var(main-background) a(50%))"
+	},
+	
+	"rules": [
+		{
+			"name": "Comment",
+			"scope": "comment",
+			"foreground": "var(comment-color)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Number",
+			"scope": "constant.numeric",
+			"foreground": "#BA6A4A"
+		},
+		{
+			"name": "Number Float",
+			"scope": "constant.numeric.float",
+			"font_style": "italic"
+		},
+		{
+			"name": "Built-in constant / Bool",
+			"scope": "constant.language",
+			"foreground": "#C2712F",
+			"font_style": "bold"
+		},
+		{
+			"name": "Function Definition",
+			"scope": "support.function",
+			"foreground": "#A17C48",
+			"font_style": "bold"
+		},
+		{
+			"name": "Function Call",
+			"scope": "variable.function",
+			"foreground": "#3B7BB3"
+		},
+		{
+			"name": "Define Constant",
+			"scope": "entity.name.constant.preprocessor",
+			"foreground": "#CF8506"
+		},
+		{
+			"name": "Include path",
+			"scope": "meta.preprocessor.include.path",
+			"foreground": "#B4DE0D"
+		},
+		{
+			"name": "Preprocessor",
+			"scope": "meta.preprocessor",
+			"foreground": "#FFA60D"
+		},
+		{
+			"name": "Define Multiline Block",
+			"scope": "meta.preprocessor.define.multiline",
+			"foreground": "var(main-foreground)",
+			"background": "color(var(main-background) l(+ 5%))"
+		},
+		{
+			"name": "Define Group",
+			"scope": "meta.preprocessor.group",
+			"foreground": "#B4DE0D"
+		},
+		{
+			"name": "Control",
+			"scope": "keyword.control",
+			"foreground": "#C9A34F"
+		},
+		{
+			"name": "Operator",
+			"scope": "keyword.operator",
+			"foreground": "#E0BD5C"
+		},
+		{
+			"name": "Brackets",
+			"scope": "meta.brackets",
+			"foreground": "#aaa",
+			"font_style": "bold"
+		},
+		{
+			"name": "Parens",
+			"scope": "punctuation.section.group",
+			"foreground": "#aaa",
+			"font_style": "bold"
+		},
+		{
+			"name": "Brace",
+			"scope": "punctuation.section.block",
+			"foreground": "#aaa"
+		},
+		{
+			"name": "Coma",
+			"scope": "punctuation.separator",
+			"foreground": "#aaa"
+		},
+		{
+			"name": "Function Types",
+			"scope": "storage.modifier.function",
+			"foreground": "#EAED91",
+			"font_style": "bold"
+		},
+		{
+			"name": "Vars Types",
+			"scope": "storage.type.vars",
+			"foreground": "#D3D66F"
+		},
+		{
+			"name": "Tag",
+			"scope": "storage.modifier.tag",
+			"foreground": "#B5B861",
+			"font_style": "italic"
+		},
+		{
+			"name": "String",
+			"scope": "string",
+			"foreground": "#84A364"
+		},
+		{
+			"name": "String Escape",
+			"scope": "string constant",
+			"foreground": "#9FC748"
+		},
+		{
+			"name": "Constant Vars",
+			"scope": "constant.vars",
+			"foreground": "#8B6AAD",
+			"font_style": "italic",
+			"background": "#00000001"
+		},
+		{
+			"name": "Fix Constant on selection",
+			"scope": "fixselection",
+			"background": "#00000001"
+		},
+		{
+			"name": "Invalid – Illegal",
+			"scope": "invalid.illegal",
+			"foreground": "#000000",
+			"background": "#ff2D5699"
+		}
+	]
+}

@@ -1,0 +1,158 @@
+[
+	{
+		"caption": "AMX Mod-X",
+		"id": "AMXXEditorV4",
+		"children":
+		[
+			{
+				"command": "amxx_about",
+				"caption": "About AMXX-Editor"
+			},
+			{ "caption": "-" },
+			{
+				"command": "edit_settings", "args":
+				{
+					"base_file": "${packages}/AMXXEditorV4/AMXX-Editor.sublime-settings",
+					"default": "{\n\t$0\n}\n"
+				},
+				"caption": "Edit Settings"
+			},
+			{
+				"caption": "Color Style",
+				"children":
+				[
+					{
+						"caption": "Editor",
+						"children":
+						[
+							{ "command": "amxx_editor_style", "args": {"index": 0} },
+							{ "command": "amxx_editor_style", "args": {"index": 1} },
+							{ "command": "amxx_editor_style", "args": {"index": 2} },
+							{ "command": "amxx_editor_style", "args": {"index": 3} },
+							{ "command": "amxx_editor_style", "args": {"index": 4} },
+							{ "command": "amxx_editor_style", "args": {"index": 5} },
+							{ "command": "amxx_editor_style", "args": {"index": 6} },
+							{ "command": "amxx_editor_style", "args": {"index": 7} },
+							{ "command": "amxx_editor_style", "args": {"index": 8} },
+							{ "command": "amxx_editor_style", "args": {"index": 9} },
+							{ "command": "amxx_editor_style", "args": {"index": 10} },
+							{ "command": "amxx_editor_style", "args": {"index": 11} },
+							{ "command": "amxx_editor_style", "args": {"index": 12} },
+							{ "command": "amxx_editor_style", "args": {"index": 13} },
+							{ "command": "amxx_editor_style", "args": {"index": 14} },
+							{ "command": "amxx_editor_style", "args": {"index": 15} },
+							{ "command": "amxx_editor_style", "args": {"index": 16} },
+							{ "command": "amxx_editor_style", "args": {"index": 17} },
+							{ "command": "amxx_editor_style", "args": {"index": 18} },
+							{ "command": "amxx_editor_style", "args": {"index": 19} },
+							{ "command": "amxx_editor_style", "args": {"index": 20} }
+						]
+					},
+					{
+						"caption": "Console",
+						"children":
+						[
+							{ "command": "amxx_console_style", "args": {"index": 0} },
+							{ "command": "amxx_console_style", "args": {"index": 1} },
+							{ "command": "amxx_console_style", "args": {"index": 2} },
+							{ "command": "amxx_console_style", "args": {"index": 3} },
+							{ "command": "amxx_console_style", "args": {"index": 4} },
+							{ "command": "amxx_console_style", "args": {"index": 5} },
+							{ "command": "amxx_console_style", "args": {"index": 6} },
+							{ "command": "amxx_console_style", "args": {"index": 7} },
+							{ "command": "amxx_console_style", "args": {"index": 8} },
+							{ "command": "amxx_console_style", "args": {"index": 9} },
+							{ "command": "amxx_console_style", "args": {"index": 10} },
+							{ "command": "amxx_console_style", "args": {"index": 11} },
+							{ "command": "amxx_console_style", "args": {"index": 12} },
+							{ "command": "amxx_console_style", "args": {"index": 13} },
+							{ "command": "amxx_console_style", "args": {"index": 14} },
+							{ "command": "amxx_console_style", "args": {"index": 15} },
+							{ "command": "amxx_console_style", "args": {"index": 16} },
+							{ "command": "amxx_console_style", "args": {"index": 17} },
+							{ "command": "amxx_console_style", "args": {"index": 18} },
+							{ "command": "amxx_console_style", "args": {"index": 19} },
+							{ "command": "amxx_console_style", "args": {"index": 20} }
+						]
+					},
+					{
+						"caption": "Popup",
+						"children":
+						[
+							{ "command": "amxx_popup_style", "args": {"index": 0} },
+							{ "command": "amxx_popup_style", "args": {"index": 1} },
+							{ "command": "amxx_popup_style", "args": {"index": 2} },
+							{ "command": "amxx_popup_style", "args": {"index": 3} },
+							{ "command": "amxx_popup_style", "args": {"index": 4} },
+							{ "command": "amxx_popup_style", "args": {"index": 5} },
+							{ "command": "amxx_popup_style", "args": {"index": 6} },
+							{ "command": "amxx_popup_style", "args": {"index": 7} },
+							{ "command": "amxx_popup_style", "args": {"index": 8} },
+							{ "command": "amxx_popup_style", "args": {"index": 9} },
+							{ "command": "amxx_popup_style", "args": {"index": 10} },
+							{ "command": "amxx_popup_style", "args": {"index": 11} },
+							{ "command": "amxx_popup_style", "args": {"index": 12} },
+							{ "command": "amxx_popup_style", "args": {"index": 13} },
+							{ "command": "amxx_popup_style", "args": {"index": 14} },
+							{ "command": "amxx_popup_style", "args": {"index": 15} },
+							{ "command": "amxx_popup_style", "args": {"index": 16} },
+							{ "command": "amxx_popup_style", "args": {"index": 17} },
+							{ "command": "amxx_popup_style", "args": {"index": 18} },
+							{ "command": "amxx_popup_style", "args": {"index": 19} },
+							{ "command": "amxx_popup_style", "args": {"index": 20} }
+						]
+					},
+				]
+			},
+			{
+				"caption": "Build Profile",
+				"children":
+				[
+					{ "command": "amxx_profile", "args": {"index": 0} },
+					{ "command": "amxx_profile", "args": {"index": 1} },
+					{ "command": "amxx_profile", "args": {"index": 2} },
+					{ "command": "amxx_profile", "args": {"index": 3} },
+					{ "command": "amxx_profile", "args": {"index": 4} },
+					{ "command": "amxx_profile", "args": {"index": 5} },
+					{ "command": "amxx_profile", "args": {"index": 6} },
+					{ "command": "amxx_profile", "args": {"index": 7} },
+					{ "command": "amxx_profile", "args": {"index": 8} },
+					{ "command": "amxx_profile", "args": {"index": 9} },
+					{ "command": "amxx_profile", "args": {"index": 10} }
+						]
+					},
+			{ "caption": "-" },
+			{
+				"command": 	"amxx_func_list",
+				"caption": 	"Functions List"
+			},
+			{
+				"command": 	"amxx_tree",
+				"caption": 	"Includes Tree"
+			},
+			{
+				"command": 	"amxx_search_all",
+				"caption": 	"Search All"
+			},
+			{ "caption": "-" },
+			{
+				"command": "amxx_uncompress",
+				"caption": "AMXX Uncompress"
+			},
+			{
+				"command": "amxx_lysis_decompile",
+				"caption": "Lysis Decompile"
+			},
+			{ "command": "open_url", "args": {"url": "https://destro-.github.io/AMXXEditorV4/HUDEditor.html"}, "caption": "HUD Editor" },
+			{ "caption": "-" },
+			{
+				"command": "amxx_new_include",
+				"caption": "New Include"
+			},
+			{
+				"command": "amxx_new_plugin",
+				"caption": "New Plug-In"
+			}
+		]
+	}
+]
